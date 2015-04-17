@@ -14,26 +14,7 @@
         </value>
         <next>
           <block type="oled_drawtext" id="5">
-            <field name="TEXT">I can get my row bot</field>
-            <next>
-              <block type="oled_setcursor" id="51" inline="true">
-                <value name="STARTX">
-                  <block type="math_number" id="58">
-                    <field name="NUM">10</field>
-                  </block>
-                </value>
-                <value name="STARTY">
-                  <block type="math_number" id="65">
-                    <field name="NUM">10</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="oled_drawtext" id="20">
-                    <field name="TEXT">to talk for me</field>
-                  </block>
-                </next>
-              </block>
-            </next>
+            <field name="TEXT">I am a chicken</field>
           </block>
         </next>
       </block>
