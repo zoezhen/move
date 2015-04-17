@@ -1,52 +1,20 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="116" x="306" y="90">
+  <block type="oled_cleardisplay" id="403" x="389" y="70">
     <next>
-      <block type="robot_delay" id="118" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="178">
-            <field name="NUM">3000</field>
+      <block type="oled_setcursor" id="412" inline="true">
+        <value name="STARTX">
+          <block type="math_number" id="444">
+            <field name="NUM">10</field>
+          </block>
+        </value>
+        <value name="STARTY">
+          <block type="math_number" id="451">
+            <field name="NUM">10</field>
           </block>
         </value>
         <next>
-          <block type="movement_left" id="128">
-            <next>
-              <block type="robot_delay" id="139" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="185">
-                    <field name="NUM">2000</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="movement_right" id="156">
-                    <next>
-                      <block type="robot_delay" id="159" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="198">
-                            <field name="NUM">4000</field>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="movement_stutter" id="170">
-                            <next>
-                              <block type="robot_delay" id="200" inline="true">
-                                <value name="DELAY">
-                                  <block type="math_number" id="207">
-                                    <field name="NUM">5000</field>
-                                  </block>
-                                </value>
-                                <next>
-                                  <block type="movement_stop" id="231"></block>
-                                </next>
-                              </block>
-                            </next>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </next>
+          <block type="oled_drawtext" id="430">
+            <field name="TEXT">Hello World</field>
           </block>
         </next>
       </block>
