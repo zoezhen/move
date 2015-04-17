@@ -14,7 +14,12 @@
         </value>
         <next>
           <block type="oled_drawtext" id="5">
-            <field name="TEXT">I can get my row bot to talk for me :)</field>
+            <field name="TEXT">I can get my row bot</field>
+            <next>
+              <block type="oled_drawtext" id="20">
+                <field name="TEXT">to talk for me</field>
+              </block>
+            </next>
           </block>
         </next>
       </block>
